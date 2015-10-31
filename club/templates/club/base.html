@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--手机-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GameClub|游戏圈子</title>
+
+    <!--第三方-->
+    <link rel="stylesheet" href="../../static/bootstrap/bootstrap.min.css">
+
+    <script src="../../static/jquery/jquery-2.1.4.min.js"></script>
+    <script src="../../static/bootstrap/bootstrap.min.js"></script>
+
+    <!--my-->
+    <link rel="stylesheet" href="../../static/club/css/club.css">
+
+    <script src="../../static/club/js/index.js"></script>
+</head>
+<body>
+<!--头部导航-->
+{% include "club/include/nav.html" %}
+
+{#{% if page_index %}#}
+    <!--提示登录-->
+    {% include "club/widgets/tips-reg-login.html" %}
+    <!--登陆注册弹出页面-->
+    {% include "club/widgets/dia-log-reg.html" %}
+{#{% endif %}#}
+
+<!--页面主体-->
+<div class="container">
+    <div class="article col-md-8 col-sm-8">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="right-nav col-md-4 col-sm-4 hidden-xs navbar-right">
+        {% block side-nav %}
+        {% endblock %}
+    </div>
+</div>
+
+</body>
+</html>

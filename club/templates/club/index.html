@@ -1,0 +1,145 @@
+{% extends "club/base.html" %}
+
+{#主要内容#}
+{% block content %}
+    <div class="tab-content">
+        <div class="items-con-new">
+{#            {% for item in items-con %}#}
+
+{#                TODO 还没有修改成模板 #}
+
+                <table class="items-con">
+                    <tbody>
+                    <tr>
+                        <td class="item-left">
+                            <a class="item-avatar-a">
+                                <img class="show-toolkit item-avatar" src="" alt="">
+                            </a>
+                        </td>
+                        <td class="item-main">
+                            <a class="item-title" target="_blank">约战</a>
+                            <div class="hidden-xs">
+                                <div class="item-hot-comment-div">
+                                    <div class="item-hot-comment">守望先锋我来战~\(≧▽≦)/~</div>
+                                    <span class="item-hot-comment-scale">显示全部</span>
+                                </div>
+                                <span class="item-info">
+                                    <a class="show-toolkit item-user"><!--发布用户--></a>
+                                    &nbsp;•&nbsp;
+                                    <span class="item-date"><!--发布时间--></span>
+                                    <span class="lastest-comment-info">
+                                        &nbsp;•&nbsp; 最新回复来自
+                                        <a class="show-toolkit item-latest-user" >
+                                            <!-- 最新回复用户 -->
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="item-right">
+                            <a class="item-comments-count item-comments-count-a" href="">0</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr class="table_line">
+{#            {% endfor %}#}
+        </div>
+        <div id="item-more-new" class="item-more">
+            <!--<i id="spinner-gray-new" class="spinner-gray"></i>-->
+            <span>加载更多O(∩_∩)O~</span>
+        </div>
+    </div>
+{% endblock %}
+
+{#页面左边功能#}
+{% block side-nav %}
+{#    {% for tab in tab-content %}#}
+        <div class="tab-content">
+            <h3 class="side-nav-title">推荐用户<a href="" class="item-title side-nav-title-right">更多推荐 »</a></h3>
+            <div class="user-recommand-list-div" >
+                <ul class="user-recommand-list">
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-tip="s$r$不感兴趣" class="del">
+                            <i class="icon icon-ignore"></i>
+                        </a>
+                        <a href="" class="avatar">
+                            <img src="">
+                        </a>
+                        <div class="user-recommand-bd">
+                            <a href="">李启成</a>
+                            <div class="headline">
+                                <span title="个人主页：lqczzz.cc">微信：q794058798</span>
+                            </div>
+                            <div class="ft">
+                                <span class="reason"><a href="">谢熊猫君</a> 等 7 人也关注了他</span>
+                                <span class="zg-bull">•</span>
+                                <a class="zg-follow follow" href="#" >关注</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+{#    {% endfor %}#}
+
+    <!--页脚-->
+    {% include "club/include/footer.html" %}
+{% endblock %}
